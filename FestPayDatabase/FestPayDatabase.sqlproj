@@ -60,5 +60,17 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Product.sql" />
+    <Build Include="Category.sql" />
+    <Build Include="ProductCategory.sql" />
+    <Build Include="ProductStore.sql" />
+    <Build Include="Store.sql" />
+    <Build Include="Order.sql" />
+    <Build Include="OrderProduct.sql" />
+    <Build Include="Credits.sql" />
+    <Build Include="User.sql" />
+    <Build Include="Role.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="FestPayDatabase.refactorlog" />
   </ItemGroup>
 </Project>

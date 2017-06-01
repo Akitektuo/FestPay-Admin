@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Order]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Year] NUMERIC(4) NOT NULL, 
+    [Month] NUMERIC(2) NOT NULL,
+	[Day] NUMERIC(2) NOT NULL,
+	[Hour] NUMERIC(2) NOT NULL,
+	[Minute] NUMERIC(2) NOT NULL,
+	[Second] NUMERIC(2) NOT NULL
+)
