@@ -7,4 +7,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Name" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="b56fd25e-f80a-4e88-adab-e6d0c6514dd6" ChangeDateTime="06/14/2017 15:09:26">
+    <Property Name="ElementName" Value="[dbo].[User].[Flag]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsBanned" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d2d6efc7-ea09-4a13-8ae2-a1e4cfdfaae0" ChangeDateTime="06/14/2017 15:09:47">
+    <Property Name="ElementName" Value="[dbo].[User].[IsBanned]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CanPay" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="28d7ca90-2aab-4ac2-9c18-d649cbac9f1b" ChangeDateTime="06/14/2017 15:12:14">
+    <Property Name="ElementName" Value="[dbo].[Order].[Date]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Order]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PlacementDate" />
+  </Operation>
 </Operations>

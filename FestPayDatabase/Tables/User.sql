@@ -6,5 +6,6 @@
     [Password] NVARCHAR(100) NOT NULL, 
     [Code] NUMERIC NOT NULL, 
     [Coordinates] NVARCHAR(50) NOT NULL, 
-    [Flag] INT NOT NULL 
+    [CanPay] BIT NOT NULL DEFAULT 1, 
+    [CanLogIn] BIT NOT NULL DEFAULT 1 
 )
