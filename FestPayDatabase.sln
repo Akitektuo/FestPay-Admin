@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FestPayDatabase", "FestPayDatabase\FestPayDatabase.sqlproj", "{6FC9C348-0AB9-4D73-B62A-FB5A245184C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FestPayWeb", "FestPayWeb\FestPayWeb.csproj", "{56A16459-8097-4E0A-B23B-BF5CE0C2D74A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{6FC9C348-0AB9-4D73-B62A-FB5A245184C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FC9C348-0AB9-4D73-B62A-FB5A245184C3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6FC9C348-0AB9-4D73-B62A-FB5A245184C3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{56A16459-8097-4E0A-B23B-BF5CE0C2D74A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A16459-8097-4E0A-B23B-BF5CE0C2D74A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A16459-8097-4E0A-B23B-BF5CE0C2D74A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A16459-8097-4E0A-B23B-BF5CE0C2D74A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
