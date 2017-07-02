@@ -9,12 +9,57 @@
 
 <head>
     <link href="@Url.Content("~/Styles/LogIn.css")" rel="stylesheet" type="text/css"/>
+    <title>FestPay</title>
+    <style>
+        body {
+            background-color: #FAFAFA;
+            padding: 64px;
+        }
+
+        #container {
+            width: 50%;
+            display: block;
+            margin: auto;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            padding: 64px;
+            text-align: center;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        #form_div {
+            display: flex;
+        }
+
+        form {
+            margin: auto;
+        }
+
+        input {
+            margin: 4px;
+        }
+
+        button {
+            margin: 4px;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="container">
-        Test
+        <h1 class="title">Log In into FestPay</h1>
+        <div id="form_div">
+            <form method="post">
+                <input type="email" name="email" placeholder="E-mail" required="required"><br>
+                <input type="password" name="password" placeholder="Password" required="required"><br>
+                <input type="checkbox" name="remember" value="Remember">Remember me<br>
+                <button type="button">Register</button>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
     </div>
 
 </body>
