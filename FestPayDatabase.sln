@@ -7,7 +7,10 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FestPay.Database", "FestPay
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FestPayWeb.old", "FestPayWeb\FestPayWeb.old.csproj", "{56A16459-8097-4E0A-B23B-BF5CE0C2D74A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FestPay.Web", "FestPay.Web\FestPay.Web.csproj", "{9B4695C3-437B-470B-94B6-DBB80ADA86AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FestPay.Web", "FestPay.Web\FestPay.Web.csproj", "{9B4695C3-437B-470B-94B6-DBB80ADA86AB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9011D9FC-2CE7-4125-8980-F0179C194673} = {9011D9FC-2CE7-4125-8980-F0179C194673}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FestPay.Repository", "FestPay.Repository\FestPay.Repository.csproj", "{9011D9FC-2CE7-4125-8980-F0179C194673}"
 EndProject
