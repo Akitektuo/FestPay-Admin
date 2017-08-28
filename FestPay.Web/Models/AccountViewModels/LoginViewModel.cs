@@ -2,7 +2,7 @@
 
 namespace FestPay.Web.Models.AccountViewModels
 {
-    public class ProductViewModel
+    public class UserViewModel
     {
         [Required]
         [EmailAddress]

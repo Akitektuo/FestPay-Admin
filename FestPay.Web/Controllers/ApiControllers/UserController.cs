@@ -10,8 +10,9 @@ namespace FestPay.Web.Controllers.ApiControllers
     {
         [Route("logIn")]
         [HttpPost]
-        public bool Login(ProductViewModel user)
+        public bool Login(UserViewModel user)
         {
+            //Question: how do you connect the db with this?
             return true;
         }
 
