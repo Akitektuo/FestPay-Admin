@@ -25,9 +25,9 @@ namespace FestPay.Web.Controllers.ApiControllers
 
         [Route("passwordForgotten")]
         [HttpGet]
-        public bool RequestPassword(string email)
+        public string RequestPassword(string email)
         {
-            return true;
+            return email;
         }
 
     }
