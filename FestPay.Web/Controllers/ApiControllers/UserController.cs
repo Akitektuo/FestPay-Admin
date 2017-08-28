@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using FestPay.Web.Models.AccountViewModels;
+using System.Collections.Generic;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,8 +13,12 @@ namespace FestPay.Web.Controllers.ApiControllers
         [HttpPost]
         public bool Login(UserViewModel user)
         {
+            List<string> accountList = new List<string> {
+                "email1",
+                "email2"
+            };
             //Question: how do you connect the db with this?
-            return true;
+            return accountList.Contains(user.Email);
         }
 
         [Route("register")]
