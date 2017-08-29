@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using FestPay.Web.Models.AccountViewModels;
 using System.Collections.Generic;
+using FestPay.Repository;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,25 +15,48 @@ namespace FestPay.Web.Controllers.ApiControllers
         public bool Login(UserViewModel user)
         {
             List<string> accountList = new List<string> {
-                "email1",
-                "email2"
+                "admin@gmail.com",
+                "denisa@gmail.com",
+                "mihnea@gmail.com",
+                "dan@gmail.com",
+                "matei@gmail.com",
+                "alex@gmail.com",
+                "marius@gmail.com"
             };
+
             //Question: how do you connect the db with this?
-            return accountList.Contains(user.Email);
+            return accountList.Contains(user.Email) && user.Password.Equals("parola");
         }
 
         [Route("register")]
         [HttpGet]
         public bool Register(RegisterViewModel user)
-        {
+        { 
+            UserRepository userRepository = new UserRepository(new FestPayEntities());
+            // User response = userRepository.Add(new User());
+            // return response != null;
             return true;
         }
 
         [Route("passwordForgotten")]
         [HttpGet]
-        public string RequestPassword(string email)
+        public bool RequestPassword(string email)
         {
-            return email;
+            //get from db user
+            // if there is a user, send email
+            // else return false
+            List<string> accountList = new List<string> {
+                "admin@gmail.com",
+                "denisa@gmail.com",
+                "mihnea@gmail.com",
+                "dan@gmail.com",
+                "matei@gmail.com",
+                "alex@gmail.com",
+                "marius@gmail.com"
+            };
+
+            //Question: how do you connect the db with this?
+            return accountList.Contains(email);
         }
 
     }
