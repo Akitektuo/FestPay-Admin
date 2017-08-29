@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using FestPay.Repository;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -11,6 +12,13 @@ namespace FestPay.Web.Controllers.ApiControllers
     [Route("api/[controller]")]
     public class TestController : Controller
     {
+        private UserRepository userRepository { get; set; }
+
+        public TestController(UserRepository userRepo)
+        {
+            userRepository = userRepo;
+        }
+
         // GET: api/values
         [HttpGet]
         public ActionResult Get()
@@ -24,6 +32,7 @@ namespace FestPay.Web.Controllers.ApiControllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
+            userRepository.GetUserById(id);
             return "value";
         }
 
