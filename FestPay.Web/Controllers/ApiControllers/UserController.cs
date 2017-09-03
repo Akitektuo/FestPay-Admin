@@ -23,13 +23,12 @@ namespace FestPay.Web.Controllers.ApiControllers
                 "alex@gmail.com",
                 "marius@gmail.com"
             };
-
-            //Question: how do you connect the db with this?
+            
             return accountList.Contains(user.Email) && user.Password.Equals("parola");
         }
 
         [Route("register")]
-        [HttpGet]
+        [HttpPost]
         public bool Register(RegisterViewModel user)
         { 
             UserRepository userRepository = new UserRepository(new FestPayEntities());
@@ -55,7 +54,6 @@ namespace FestPay.Web.Controllers.ApiControllers
                 "marius@gmail.com"
             };
 
-            //Question: how do you connect the db with this?
             return accountList.Contains(email);
         }
 
