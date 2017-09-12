@@ -21,4 +21,11 @@ namespace FestPay.Web.Models.VendorViewModels
         public string Search { get; set; }
         public string Category { get; set; }
     }
+
+    public class PayViewModel
+    {
+        public List<int> ProductIds { get; set; }
+        public int VendorId { get; set; }
+        public int CustomerId { get; set; }
+    }
 }
