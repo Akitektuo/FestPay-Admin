@@ -151,21 +151,21 @@ namespace FestPay.Web.Controllers.ApiControllers
             return products;
         }
 
-        [Route("products")]
+        [Route("vendor")]
         [HttpGet]
         public List<ProductViewModel> GetProducts(string vendor)
         {
             return products.Where(p => p.Shops.Contains(vendor)).ToList();
         }
 
-        [Route("products")]
+        [Route("search")]
         [HttpGet]
         public List<ProductViewModel> GetProducts(string vendor, string search)
         {
             return products.Where(p => p.Shops.Contains(vendor) && (p.Name.ToLower().Contains(search.ToLower()) || p.Description.ToLower().Contains(search.ToLower()))).ToList();
         }
 
-        [Route("products")]
+        [Route("category")]
         [HttpGet]
         public List<ProductViewModel> GetProducts(string vendor, string search, string category)
         {
