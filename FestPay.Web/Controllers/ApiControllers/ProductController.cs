@@ -159,6 +159,10 @@ namespace FestPay.Web.Controllers.ApiControllers
         [HttpGet]
         public List<ProductViewModel> GetProducts(string vendor, string search)
         {
+            if (search == null)
+            {
+                search = "";
+            }
             return products.Where(p => p.Shop.Contains(vendor) && (p.Name.ToLower().Contains(search.ToLower()) || p.Description.ToLower().Contains(search.ToLower()))).ToList();
         }
 
@@ -166,6 +170,10 @@ namespace FestPay.Web.Controllers.ApiControllers
         [HttpGet]
         public List<ProductViewModel> GetProducts(string vendor, string search, string category)
         {
+            if (search == null)
+            {
+                search = "";
+            }
             return products.Where(p =>
                 p.Shop.Contains(vendor) && p.Category.Equals(category) && (p.Name.ToLower().Contains(search.ToLower()) || p.Description.ToLower().Contains(search.ToLower()))).ToList();
         }
