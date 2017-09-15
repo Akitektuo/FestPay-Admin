@@ -32,7 +32,7 @@ namespace FestPay.Web.Controllers.ApiControllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            userRepository.GetUserById(id);
+            //userRepository.GetUserById(id);
             return "value";
         }
 

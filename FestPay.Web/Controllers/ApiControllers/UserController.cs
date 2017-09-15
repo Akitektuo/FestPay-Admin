@@ -12,7 +12,7 @@ namespace FestPay.Web.Controllers.ApiControllers
     {
         [Route("logIn")]
         [HttpPost]
-        public bool Login(UserViewModel user)
+        public bool Login([FromBody]UserViewModel user)
         {
             List<string> accountList = new List<string> {
                 "admin@gmail.com",
@@ -31,7 +31,7 @@ namespace FestPay.Web.Controllers.ApiControllers
         [HttpPost]
         public bool Register(RegisterViewModel user)
         { 
-            UserRepository userRepository = new UserRepository(new FestPayEntities());
+            //UserRepository userRepository = new UserRepository(new FestPayEntities());
             // User response = userRepository.Add(new User());
             // return response != null;
             return true;
