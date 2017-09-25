@@ -13,6 +13,7 @@ namespace FestPay.Web.Controllers.ApiControllers
         [Route("logIn")]
         [HttpPost]
         public bool Login([FromBody]UserViewModel user)
+        //public bool Login([FromBody]UserViewModel user)
         {
             List<string> accountList = new List<string> {
                 "admin@gmail.com",
@@ -23,7 +24,7 @@ namespace FestPay.Web.Controllers.ApiControllers
                 "alex@gmail.com",
                 "marius@gmail.com"
             };
-            
+            //return new LoginViewModel(1, "Pancake House");
             return accountList.Contains(user.Email) && user.Password.Equals("parola");
         }
 

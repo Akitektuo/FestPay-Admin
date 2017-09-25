@@ -180,9 +180,24 @@ namespace FestPay.Web.Controllers.ApiControllers
 
         [Route("pay")]
         [HttpPost]
+        //public int Pay(PayViewModel pay)
         public bool Pay(PayViewModel pay)
         {
+            int random = new Random().Next(9998) + 1;
+
+            //return random;
             return true;
+        }
+
+        [Route("updateCustomer")]
+        [HttpGet("{id}")]
+        //public int Pay(PayViewModel pay)
+        public int UpdateCustomer(int userId)
+        {
+            int random = new Random().Next(9998) + 1;
+
+            //return random;
+            return random;
         }
 
     }
